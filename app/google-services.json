@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "246626293398",
+    "project_id": "taskademia-d7cfe",
+    "storage_bucket": "taskademia-d7cfe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:246626293398:android:539079fd3e26a4eabd14b7",
+        "android_client_info": {
+          "package_name": "com.example.taskcademia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "246626293398-opeqdotihjkbo5iqn6ho38b4md5obidh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCa8pMGem6NaSCnY2QVGjiIqY10mk8Yw_c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "246626293398-opeqdotihjkbo5iqn6ho38b4md5obidh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
