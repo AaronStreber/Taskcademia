@@ -1,5 +1,6 @@
 package classes;
 
+
 public class Score {
      int total;
      int earned;

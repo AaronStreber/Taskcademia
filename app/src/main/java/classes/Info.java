@@ -1,5 +1,6 @@
 package classes;
 
+
 public class Info {
     String name;
     String last_name;
