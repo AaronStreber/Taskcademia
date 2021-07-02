@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">Taskcademia</string>
-    <string name="editTextTextPersonName" >Username</string>
-    <string name="editTextTextPassword" >Password</string>
+    <string name="editTextTextPersonName">Username</string>
+    <string name="editTextTextPassword">Password</string>
     <string name="button">Login</string>
     <string name="login">LOGIN</string>
+    <string name="login_btn">Log In</string>
 </resources>

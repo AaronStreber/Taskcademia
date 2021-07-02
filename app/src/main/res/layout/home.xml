@@ -26,10 +26,11 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <Button
-            android:id="@+id/button8"
+            android:id="@+id/courses_btn"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="104dp"
+            android:onClick="launchCourses"
             android:text="Courses"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -37,46 +38,50 @@
             app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
         <Button
-            android:id="@+id/button9"
+            android:id="@+id/calendar_btn"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
+            android:onClick="launchCalendar"
             android:text="Calendar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button8" />
+            app:layout_constraintTop_toBottomOf="@+id/courses_btn" />
 
         <Button
-            android:id="@+id/button10"
+            android:id="@+id/teachers_btn"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
+            android:onClick="launchTeachers"
             android:text="Teachers"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button9" />
+            app:layout_constraintTop_toBottomOf="@+id/calendar_btn" />
 
         <Button
-            android:id="@+id/button11"
+            android:id="@+id/food_btn"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
+            android:onClick="launchFood"
             android:text="Food"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button10" />
+            app:layout_constraintTop_toBottomOf="@+id/teachers_btn" />
 
         <Button
-            android:id="@+id/button12"
+            android:id="@+id/profile_btn"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
+            android:onClick="launchProfile"
             android:text="Profile"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button11" />
+            app:layout_constraintTop_toBottomOf="@+id/food_btn" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
