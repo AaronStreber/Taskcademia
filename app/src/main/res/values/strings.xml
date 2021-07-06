@@ -1,8 +1,16 @@
 <resources>
     <string name="app_name">Taskcademia</string>
-    <string name="editTextTextPersonName">Username</string>
-    <string name="editTextTextPassword">Password</string>
-    <string name="button">Login</string>
-    <string name="login">LOGIN</string>
-    <string name="login_btn">Log In</string>
+    <string name="editTextTextPersonName" translatable="false">Username</string>
+    <string name="editTextTextPassword" translatable="false">Password</string>
+    <string name="button" translatable="false">Login</string>
+    <string name="login" translatable="false">LOGIN</string>
+    <string name="login_btn" translatable="false">Log In</string>
+    <string name="brightness" translatable="false">Brightness</string>
+    <string name="settings" translatable="false">Settings</string>
+    <string name="phone_number" translatable="false">Phone Number</string>
+    <string name="text_size" translatable="false">Text Size</string>
+    <string name="notifications" translatable="false">Notifications</string>
+    <string name="on_off" translatable="false">On/Off</string>
+    <string name="profile" translatable="false">Profile</string>
+    <string name="email" translatable="false">Email</string>
 </resources>
