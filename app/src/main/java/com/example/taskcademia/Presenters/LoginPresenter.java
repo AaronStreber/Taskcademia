@@ -22,6 +22,7 @@ public class LoginPresenter implements com.example.taskcademia.Interfaces.LoginP
     public void validationUser(String user, String password) {
         if (view != null){
             view.showProgress();
+            model.userValidation(user, password, this);
         }
     }
 

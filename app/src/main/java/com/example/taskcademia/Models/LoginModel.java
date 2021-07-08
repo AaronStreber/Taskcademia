@@ -2,7 +2,6 @@ package com.example.taskcademia.Models;
 
 import android.os.Handler;
 
-import com.example.taskcademia.Interfaces.LoginView;
 import com.example.taskcademia.Interfaces.OnLoginFinishListener;
 
 public class LoginModel implements com.example.taskcademia.Interfaces.LoginModel {

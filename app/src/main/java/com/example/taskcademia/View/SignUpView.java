@@ -1,17 +1,17 @@
 package com.example.taskcademia.View;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.taskcademia.Interfaces.LoginPresenter;
 import com.example.taskcademia.R;
 
-public class LoginView extends AppCompatActivity implements com.example.taskcademia.Interfaces.LoginView {
+public class SignUpView extends AppCompatActivity implements com.example.taskcademia.Interfaces.LoginView {
     private EditText user;
     private EditText pass;
     private ProgressBar progressBar;

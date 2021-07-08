@@ -9,18 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Taskcademia">
-        <activity android:name=".View.MainActivity">
+        <activity android:name=".View.CalendarAct"></activity>
+        <activity android:name=".View.LoginView">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".View.LoginView" />
         <activity android:name=".View.ProfileAct" />
         <activity android:name=".View.FoodAct" />
         <activity android:name=".View.TeachersAct" />
-        <activity android:name=".View.CalendarAct" />
         <activity android:name=".View.CourseAct" />
         <activity android:name=".View.home" />
     </application>

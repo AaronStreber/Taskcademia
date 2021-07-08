@@ -13,4 +13,7 @@
     <string name="on_off" translatable="false">On/Off</string>
     <string name="profile" translatable="false">Profile</string>
     <string name="email" translatable="false">Email</string>
+    <string name="signup" translatable="false">Sign Up</string>
+    <string name="signUpEmail" translatable="false"></string>
+    <string name="signUpPassword" translatable="false"></string>
 </resources>
