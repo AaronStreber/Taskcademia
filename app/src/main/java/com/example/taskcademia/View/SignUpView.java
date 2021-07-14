@@ -20,7 +20,7 @@ public class SignUpView extends AppCompatActivity implements com.example.taskcad
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login);
+        setContentView(R.layout.signup);
 
         user = (EditText) findViewById(R.id.editTextTextPersonName);
         pass = (EditText) findViewById(R.id.editTextTextPassword);

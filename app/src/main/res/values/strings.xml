@@ -15,4 +15,8 @@
     <string name="email" translatable="false">Email</string>
     <string name="food" translatable="false">Food</string>
     <string name="menu" translatable="false">Menu</string>
+    <string name="signup" translatable="false">Sign Up</string>
+    <string name="logoutmsg" translatable="false">Are you sure you want to log out?</string>
+    <string name="logout_btn" translatable="false">Log out</string>
+    <string name="name" translatable="false">Name</string>
 </resources>
