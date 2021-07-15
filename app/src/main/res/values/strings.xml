@@ -15,8 +15,20 @@
     <string name="email" translatable="false">Email</string>
     <string name="food" translatable="false">Food</string>
     <string name="menu" translatable="false">Menu</string>
-    <string name="signup" translatable="false">Sign Up</string>
-    <string name="logoutmsg" translatable="false">Are you sure you want to log out?</string>
-    <string name="logout_btn" translatable="false">Log out</string>
-    <string name="name" translatable="false">Name</string>
+    <string name="assignments">Assignments</string>
+    <string name="course_103">Course 103</string>
+    <string name="assignment">Assignment</string>
+    <string name="course">Course</string>
+    <string name="rocks_minerals"><![CDATA[Rocks & Minerals]]></string>
+    <string name="july_20_2021">July 20, 2021</string>
+    <string name="course_102">Course 102</string>
+    <string name="july_20_2021">July 20, 2021</string>
+    <string name="due_date">Due Date</string>
+    <string name="july_21_2021">July 21, 2021</string>
+    <string name="project_01">Project 01</string>
+    <string name="course_104">Course 104</string>
+    <string name="july_22_2021">July 22, 2021</string>
+    <string name="rock_climbing">Rock Climbing</string>
+    <string name="course_105">Course 105</string>
+    <string name="july_25_2021">July 25, 2021</string>
 </resources>

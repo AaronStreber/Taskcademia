@@ -12,7 +12,7 @@
         android:layout_marginStart="174dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="179dp"
-        android:text="Assignments"
+        android:text="@string/assignments"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,20 +25,20 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="21dp"
         android:layout_marginTop="55dp"
-        android:text="Assignment"
+        android:text="@string/assignment"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/profilename"
+        android:id="@+id/textView40"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
         android:layout_marginTop="55dp"
         android:layout_marginEnd="183dp"
-        android:text="Course"
+        android:text="@string/course"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,10 +51,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="140dp"
         android:layout_marginTop="55dp"
-        android:text="Due Date"
+        android:text="@string/due_date"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/profilename"
+        app:layout_constraintStart_toStartOf="@+id/textView40"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -66,7 +66,8 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView39" />
+        app:layout_constraintTop_toBottomOf="@+id/textView39"
+        tools:text="Essay 01" />
 
     <TextView
         android:id="@+id/textView43"
@@ -77,7 +78,8 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView42" />
+        app:layout_constraintTop_toBottomOf="@+id/textView42"
+        tools:text="Exam 01" />
 
     <TextView
         android:id="@+id/textView44"
@@ -85,6 +87,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="21dp"
         android:layout_marginTop="20dp"
+        android:text="@string/rocks_minerals"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -96,6 +99,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="21dp"
         android:layout_marginTop="20dp"
+        android:text="@string/project_01"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -107,6 +111,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="21dp"
         android:layout_marginTop="20dp"
+        android:text="@string/rock_climbing"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -120,8 +125,9 @@
         android:layout_marginTop="20dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="14sp"
-        app:layout_constraintStart_toEndOf="@+id/textView42"
-        app:layout_constraintTop_toBottomOf="@+id/profilename" />
+        app:layout_constraintStart_toStartOf="@+id/textView42"
+        app:layout_constraintTop_toBottomOf="@+id/textView40"
+        tools:text="Course 101" />
 
     <TextView
         android:id="@+id/textView48"
@@ -129,6 +135,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
         android:layout_marginTop="20dp"
+        android:text="@string/course_102"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@+id/textView43"
@@ -140,6 +147,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
         android:layout_marginTop="20dp"
+        android:text="@string/course_103"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@+id/textView44"
@@ -151,6 +159,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
         android:layout_marginTop="20dp"
+        android:text="@string/course_104"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@+id/textView45"
@@ -162,6 +171,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
         android:layout_marginTop="20dp"
+        android:text="@string/course_105"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@+id/textView46"
@@ -173,6 +183,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="140dp"
         android:layout_marginTop="20dp"
+        android:text="@string/july_20_2021"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@+id/textView47"
@@ -184,6 +195,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="140dp"
         android:layout_marginTop="20dp"
+        android:text="@string/july_20_2021"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@+id/textView48"
@@ -195,6 +207,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="140dp"
         android:layout_marginTop="20dp"
+        android:text="@string/july_21_2021"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@+id/textView49"
@@ -206,6 +219,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="140dp"
         android:layout_marginTop="20dp"
+        android:text="@string/july_22_2021"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@+id/textView50"
@@ -217,6 +231,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="140dp"
         android:layout_marginTop="20dp"
+        android:text="@string/july_25_2021"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@+id/textView51"
