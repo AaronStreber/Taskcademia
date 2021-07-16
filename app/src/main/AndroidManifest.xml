@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Taskcademia">
-        <activity android:name=".View.LogoutActivity"></activity>
-        <activity android:name=".View.CalendarAct" />
+        <activity android:name=".View.DueDate" />
+        <activity android:name=".View.SignUpView" />
+        <activity android:name=".View.LogoutActivity" />
         <activity android:name=".View.LoginView">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

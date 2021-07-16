@@ -3,8 +3,10 @@ package com.example.taskcademia.Models;
 import android.os.Handler;
 
 import com.example.taskcademia.Interfaces.OnLoginFinishListener;
+import com.example.taskcademia.View.ProfileAct;
 
 public class LoginModel implements com.example.taskcademia.Interfaces.LoginModel {
+
     @Override
     public void userValidation(String user, String password, OnLoginFinishListener presenter) {
         new Handler().postDelayed(new Runnable() {

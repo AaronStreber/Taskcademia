@@ -1,5 +1,6 @@
 package com.example.taskcademia.Presenters;
 
+import android.view.View;
 import android.widget.TextView;
 
 import com.example.taskcademia.Models.profileModel;
@@ -21,7 +22,7 @@ public class profilePresenter {
         this.model = new profileModel();
     }
 
-    public void setInfo(DatabaseReference database){
+    public void setInfo(DatabaseReference database, ProfileAct view ){
         this.model.getValue(name, database.child("name"));
         this.model.getValue(email, database.child("email"));
         this.model.getValue(phone, database.child("phone"));

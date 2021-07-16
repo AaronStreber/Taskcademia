@@ -21,9 +21,9 @@ public class home extends AppCompatActivity {
         Intent intent = new Intent(this, CourseAct.class);
         startActivity(intent);
     }
-    public void launchCalendar(View view){
+    public void launchDueDates(View view){
 
-        Intent intent = new Intent(this, CalendarAct.class);
+        Intent intent = new Intent(this, DueDate.class);
         startActivity(intent);
     }
     public void launchTeachers(View view){

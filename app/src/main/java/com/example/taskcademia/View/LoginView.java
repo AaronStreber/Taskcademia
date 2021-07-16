@@ -11,6 +11,10 @@ import android.widget.ProgressBar;
 import com.example.taskcademia.Interfaces.LoginPresenter;
 import com.example.taskcademia.R;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
 public class LoginView extends AppCompatActivity implements com.example.taskcademia.Interfaces.LoginView {
     private EditText user;
     private EditText pass;
@@ -58,6 +62,32 @@ public class LoginView extends AppCompatActivity implements com.example.taskcade
     }
     @Override
     public void validation(View view) {
-        presenter.validationUser(user.getText().toString(), pass.getText().toString());
+        String userId = user.getText().toString();
+        String password = pass.getText().toString();
+        presenter.validationUser(userId, password);
+        FileOutputStream fos = null;
+        try {
+            fos = openFileOutput("user_info.txt", MODE_PRIVATE);
+            assert fos != null;
+            fos.write(userId.getBytes());
+            fos.write(" - ".getBytes());
+            fos.write(password.getBytes());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }finally {
+            if(fos != null){
+                try {
+                    fos.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
+
+    public void signUp(View view){
+        Intent intent = new Intent(this, SignUpView.class);
+        startActivity(intent);
+    }
+
 }
