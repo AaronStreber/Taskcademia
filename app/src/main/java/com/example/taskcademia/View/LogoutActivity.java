@@ -10,6 +10,7 @@ import com.example.taskcademia.R;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class LogoutActivity extends AppCompatActivity {
+    /* This is the Activity for the Log out screen */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +20,7 @@ public class LogoutActivity extends AppCompatActivity {
 
 
     public void logOut(View view) {
+        /* This method connects with FireBase to close the session and launch a new Log In activity  */
         FirebaseAuth.getInstance().signOut();
         onBackPressed();
         Intent intent = new Intent(this, LoginView.class);
