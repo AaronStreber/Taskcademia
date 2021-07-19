@@ -20,7 +20,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class TeachersAct extends AppCompatActivity {
+    /* This is the Activity of the Teachers View of the App */
 
+    /* Declare the variables for a data reference and an instance of the teachersPresenter */
     public DatabaseReference database;
     teachersPresenter presenter;
 
@@ -29,6 +31,7 @@ public class TeachersAct extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.teachers_layout);
 
+        /* Iitialize the database and presenter Variables */
         database = FirebaseDatabase.getInstance().getReference().child("data").child("teachers").child("data").child("teachers");
         presenter = new teachersPresenter(this);
         setTexts(presenter, database);
@@ -36,6 +39,7 @@ public class TeachersAct extends AppCompatActivity {
     }
 
     public void setTexts(teachersPresenter presenter, DatabaseReference database){
+        /* This method calls tne methods on the presenter to show the info of the teachers */
         presenter.setNames(database);
         presenter.setCourses(database);
         presenter.setEmail(database);
