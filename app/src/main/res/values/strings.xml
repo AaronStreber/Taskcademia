@@ -1,10 +1,9 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <string name="app_name">Taskcademia</string>
     <string name="editTextTextPersonName" translatable="false">Username</string>
     <string name="editTextTextPassword" translatable="false">Password</string>
     <string name="button" translatable="false">Login</string>
     <string name="login" translatable="false">LOGIN</string>
-    <string name="login_btn" translatable="false">Log In</string>
     <string name="brightness" translatable="false">Brightness</string>
     <string name="settings" translatable="false">Settings</string>
     <string name="phone_number" translatable="false">Phone Number</string>
@@ -13,22 +12,30 @@
     <string name="on_off" translatable="false">On/Off</string>
     <string name="profile" translatable="false">Profile</string>
     <string name="email" translatable="false">Email</string>
+    <string name="signup" translatable="false">Sign Up</string>
+    <string name="signUpEmail" translatable="false"/>
+    <string name="signUpPassword1" translatable="false" />
+    <string name="signUpPassword2" translatable="false"/>
+    <string name="signup_btn_confirmation" translatable="false">Sign Up</string>
     <string name="food" translatable="false">Food</string>
     <string name="menu" translatable="false">Menu</string>
-    <string name="assignments">Assignments</string>
-    <string name="course_103">Course 103</string>
-    <string name="assignment">Assignment</string>
-    <string name="course">Course</string>
-    <string name="rocks_minerals"><![CDATA[Rocks & Minerals]]></string>
-    <string name="july_20_2021">July 20, 2021</string>
-    <string name="course_102">Course 102</string>
-    <string name="july_20_2021">July 20, 2021</string>
-    <string name="due_date">Due Date</string>
-    <string name="july_21_2021">July 21, 2021</string>
-    <string name="project_01">Project 01</string>
-    <string name="course_104">Course 104</string>
-    <string name="july_22_2021">July 22, 2021</string>
-    <string name="rock_climbing">Rock Climbing</string>
-    <string name="course_105">Course 105</string>
-    <string name="july_25_2021">July 25, 2021</string>
+    <string name="signup2" translatable="false">Sign Up</string>
+    <string name="logOutMsg" translatable="false">Are you sure you want to log out?</string>
+    <string name="logout_btn" translatable="false">Log out</string>
+    <string name="name" translatable="false">Name</string>
+    <string name="assignments" translatable="false">Assignments</string>
+    <string name="assignment" translatable="false">Assignment</string>
+    <string name="rocks_minerals" translatable="false"><![CDATA[Rocks & Minerals]]></string>
+    <string name="course_102" translatable="false">Course 102</string>
+    <string name="july_20_2021" translatable="false">July 20, 2021</string>
+    <string name="due_date" translatable="false">Due Date</string>
+    <string name="july_21_2021" translatable="false">July 21, 2021</string>
+    <string name="project_01" translatable="false">Project 01</string>
+    <string name="course_104" translatable="false">Course 104</string>
+    <string name="july_22_2021" translatable="false">July 22, 2021</string>
+    <string name="rock_climbing" translatable="false">Rock Climbing</string>
+    <string name="course_105" translatable="false">Course 105</string>
+    <string name="july_25_2021" translatable="false">July 25, 2021</string>
+    <string name="course_103" translatable="false">Course 103</string>
+    <string name="course" translatable="false">Course</string>
 </resources>

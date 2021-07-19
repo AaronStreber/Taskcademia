@@ -1,34 +1,41 @@
 package com.example.taskcademia.View;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import com.example.taskcademia.Interfaces.LoginPresenter;
+import com.example.taskcademia.Interfaces.SignUpPresenter;
 import com.example.taskcademia.R;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
-public class SignUpView extends AppCompatActivity implements com.example.taskcademia.Interfaces.LoginView {
-    private EditText user;
-    private EditText pass;
+public class SignUpView extends AppCompatActivity implements com.example.taskcademia.Interfaces.SignUpView {
+    private EditText email;
+    private EditText password1;
+    private EditText password2;
+    private SignUpPresenter signUpPresenter;
     private ProgressBar progressBar;
-    private LoginPresenter presenter;
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.signup);
-
-        user = (EditText) findViewById(R.id.editTextTextPersonName);
-        pass = (EditText) findViewById(R.id.editTextTextPassword);
-        progressBar = (ProgressBar) findViewById(R.id.progressBar);
+        setContentView(R.layout.sign_up);
+        email = findViewById(R.id.emailSignUp);
+        password1 = findViewById(R.id.passwordSignUp1);
+        password2 = findViewById(R.id.passwordSignUp2);
+        signUpPresenter = new com.example.taskcademia.Presenters.SignUpPresenter((com.example.taskcademia.Interfaces.SignUpView) this);
+        progressBar = findViewById(R.id.progressBar2);
         hideProgress();
-        presenter = new com.example.taskcademia.Presenters.LoginPresenter(this);
-
-
     }
 
     @Override
@@ -42,22 +49,22 @@ public class SignUpView extends AppCompatActivity implements com.example.taskcad
     }
 
     @Override
-    public void errorUser() {
-        user.setError("Incorrect username!");
+    public void nameError() {
+
     }
 
     @Override
-    public void errorPassword() {
-        user.setError("Incorrect password!");
+    public void passwordError() {
+
     }
 
-    @Override
-    public void navigateToHomeScreen() {
-        Intent intent = new Intent(this, home.class);
+
+    public void createUserAccount(View view) {
+        signUpPresenter.userCreation(email.getText().toString(), password1.getText().toString(), password2.getText().toString());
+    }
+
+    public void goToLoginScreen(View view) {
+        Intent intent = new Intent(this, LoginView.class);
         startActivity(intent);
-    }
-    @Override
-    public void validation(View view) {
-        presenter.validationUser(user.getText().toString(), pass.getText().toString());
     }
 }

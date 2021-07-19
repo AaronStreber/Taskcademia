@@ -43,12 +43,13 @@
         app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/McMarket"
         android:layout_width="80dp"
         android:layout_height="36dp"
         android:layout_marginStart="19dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="185dp"
+        android:onClick="setMcMarket"
         android:text="@string/menu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView21"
@@ -67,14 +68,14 @@
         app:layout_constraintTop_toBottomOf="@+id/textView21" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/Soleil"
         android:layout_width="77dp"
         android:layout_height="40dp"
         android:layout_marginStart="60dp"
         android:layout_marginTop="5dp"
         android:text="@string/menu"
         app:layout_constraintStart_toEndOf="@+id/textView29"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/McMarket" />
 
     <TextView
         android:id="@+id/textView30"
@@ -98,12 +99,12 @@
         android:text="Chick-fil-A"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintEnd_toStartOf="@+id/loginbtn2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView30" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/loginbtn2"
         android:layout_width="83dp"
         android:layout_height="39dp"
         android:layout_marginTop="25dp"
@@ -125,14 +126,14 @@
         app:layout_constraintTop_toBottomOf="@+id/textView31" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/Caliente"
         android:layout_width="80dp"
         android:layout_height="35dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="185dp"
         android:text="@string/menu"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
+        app:layout_constraintTop_toBottomOf="@+id/loginbtn2" />
 
     <TextView
         android:id="@+id/textView33"
@@ -147,12 +148,12 @@
         app:layout_constraintTop_toBottomOf="@+id/textView32" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/TetonGrill"
         android:layout_width="80dp"
         android:layout_height="37dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="185dp"
         android:text="@string/menu"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
+        app:layout_constraintTop_toBottomOf="@+id/Caliente" />
 </androidx.constraintlayout.widget.ConstraintLayout>

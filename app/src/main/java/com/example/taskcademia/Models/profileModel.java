@@ -13,11 +13,11 @@ import org.jetbrains.annotations.NotNull;
 
 public class profileModel {
 
-    public void getValue(TextView tview, DatabaseReference database){
+    public void getValue(TextView textView, DatabaseReference database){
     database.addValueEventListener(new ValueEventListener() {
         @Override
         public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
-            tview.setText(snapshot.getValue(String.class));
+            textView.setText(snapshot.getValue(String.class));
         }
 
         @Override

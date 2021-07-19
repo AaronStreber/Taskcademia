@@ -10,25 +10,39 @@ import android.widget.ProgressBar;
 
 import com.example.taskcademia.Interfaces.LoginPresenter;
 import com.example.taskcademia.R;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class LoginView extends AppCompatActivity implements com.example.taskcademia.Interfaces.LoginView {
     private EditText user;
     private EditText pass;
     private ProgressBar progressBar;
     private LoginPresenter presenter;
+    private FirebaseAuth mAuth;
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+        setTheme(R.style.Theme_Taskcademia);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
-
-        user = (EditText) findViewById(R.id.editTextTextPersonName);
-        pass = (EditText) findViewById(R.id.editTextTextPassword);
-        progressBar = (ProgressBar) findViewById(R.id.progressBar);
+        mAuth = FirebaseAuth.getInstance();
+        user = findViewById(R.id.signUpEmail);
+        pass = findViewById(R.id.signUpPassword);
+        progressBar = findViewById(R.id.progressBar);
         hideProgress();
         presenter = new com.example.taskcademia.Presenters.LoginPresenter(this);
+    }
+    public void onStart() {
+        super.onStart();
+        // Check if user is signed in (non-null) and update UI accordingly.
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        if(currentUser != null){
+            reload();
+        }
+    }
 
-
+    private void reload() {
     }
 
     @Override
@@ -59,5 +73,10 @@ public class LoginView extends AppCompatActivity implements com.example.taskcade
     @Override
     public void validation(View view) {
         presenter.validationUser(user.getText().toString(), pass.getText().toString());
+    }
+
+    public void signUpUser(View view) {
+        Intent intent = new Intent(this, SignUpView.class);
+        startActivity(intent);
     }
 }
