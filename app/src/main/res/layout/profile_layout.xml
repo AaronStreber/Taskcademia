@@ -38,12 +38,10 @@
         android:text="@string/phone_number"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/profile_info"
         app:layout_constraintEnd_toStartOf="@+id/profile_phone"
         app:layout_constraintHorizontal_bias="0.726"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profile_email"
-        app:layout_constraintVertical_bias="0.18" />
+        app:layout_constraintTop_toBottomOf="@+id/profile_email" />
 
     <TextView
         android:id="@+id/textView8"
@@ -180,26 +178,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:layout_marginTop="140dp"
         android:onClick="showInfo"
         android:text="@string/show_info_btn"
         app:layout_constraintBottom_toTopOf="@+id/button8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.157"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profile_info"
         tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/profile_info"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginBottom="32dp"
-        app:layout_constraintBottom_toTopOf="@+id/button7"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profile_phone" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -26,6 +26,7 @@
     <string name="assignments" translatable="false">Assignments</string>
     <string name="assignment" translatable="false">Assignment</string>
     <string name="rocks_minerals" translatable="false"><![CDATA[Rocks & Minerals]]></string>
+    <string name="course_101" translatable="false">Course 101</string>
     <string name="course_102" translatable="false">Course 102</string>
     <string name="july_20_2021" translatable="false">July 20, 2021</string>
     <string name="due_date" translatable="false">Due Date</string>
@@ -38,4 +39,8 @@
     <string name="july_25_2021" translatable="false">July 25, 2021</string>
     <string name="course_103" translatable="false">Course 103</string>
     <string name="course" translatable="false">Course</string>
+    <string name="essay_01" translatable="false">Essay 01</string>
+    <string name="exam_01" translatable="false">Exam 01</string>
+    <string name="show_info_btn" translatable="false">show info btn</string>
+
 </resources>
